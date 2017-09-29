@@ -1,5 +1,5 @@
 app.controller('chatCtrl',['$scope','$http','$location','socket', '$window','EzAlert', function($scope,$http,$location,socket,$window,EzAlert) {
-    $scope.p=0;
+
 $scope.connect=()=>{
     $http.post('/',{'name':$scope.username}).then(data=>{
         $location.path('/chat')
@@ -13,7 +13,10 @@ $http.post('/ch',{}).then((data)=>{
 $scope.chat=()=>{
     $scope.p=1;
     $http.post('/chat',{'name':$scope.user,'contenu':$scope.contenu}).then(p=>{
-        EzAlert.success('message successfully sent');  
+        if( $scope.p===1){
+            EzAlert.success('message successfully sent');  
+         }
+        
     })    
     $scope.contenu=' ';
 }

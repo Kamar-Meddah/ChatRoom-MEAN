@@ -1,0 +1,142 @@
+        /* Set top padding of the page to match the height of the navbar */
+        @media (min-width: 992px) {
+            body {
+                padding-top: 6em;
+            }
+        }
+        /* Ugly hacks to fix the container within navbar functionality - should be fixed in Bootstrap 4 beta */
+        
+        .navbar-toggler {
+            z-index: 1;
+        }
+        
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+
+         :root {
+              --primary: #2C3E50;
+              --width: 250;
+          }
+          
+          .outline-blue {
+              border-color: var(--primary);
+              background-color: transparent;
+          }
+          
+          .outline-blue:hover,
+          .outline-blue:focus {
+              background-color: var(--primary);
+              color: white;
+          }
+          
+          body {
+            padding-top: 6em;
+              /*
+    background: linear-gradient(transparent, transparent), url("../img/6.jpg") no-repeat fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: white;
+    */
+              font-family: tahoma, sans-serif;
+          }
+          
+          a,
+          .blue {
+              color: var(--primary);
+          }
+          /* the search button*/
+          
+          .admin button {
+              background-color: var(--primary);
+          }
+          
+          a:hover {
+              text-decoration: none;
+          }
+          /* the search input */
+          
+          #search {
+              width: 100px;
+              height: 2em;
+              transition: width 0.5s;
+          }
+          
+          #search:hover,
+          #search:focus {
+              width: calc(var(--width) * 1px);
+              transition: width 0.5s;
+          }
+          
+          #button {
+              border-radius: 0px 5px 5px 0px;
+          }
+          
+          .control {
+              border-radius: 0.3em;
+          }
+          
+          .control:focus:valid {
+              border-color: green;
+          }
+          
+          .control:focus:invalid {
+              border-color: red;
+          }
+          
+          .btn,
+          .btn:active,
+          .btn:focus,
+          .alert,
+          img,
+          thead,
+          select,
+          .control {
+              box-shadow: 2px 3px 3px 2px black;
+          }
+          /*remove style from the search icon*/
+          
+          .admin img {
+              box-shadow: 0px 0px 0px 0px;
+              border: 0px;
+          }
+          
+          img,
+          .control {
+              border: 2px solid var(--primary);
+          }
+          
+          .breadcrumb,
+          .page-item {
+              box-shadow: 2px 3px 3px 2px lightgrey;
+          }
+          
+          h2,
+          em,
+          label,
+          .shadow {
+              text-shadow: 2px 2px lightgrey;
+          }
+          
+          .t:hover {
+              text-shadow: 2px 2px darkgray;
+          }
+          
+          .s {
+              font-size: 150%;
+              color: black;
+          }
+          
+          .re {
+              border: 2px solid white;
+          }
+
+        .m:active {
+              text-shadow: 3px 3px darkgray;
+          }
+          
+        .m{
+              font-size: 200%;
+          }

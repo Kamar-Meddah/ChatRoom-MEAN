@@ -47,7 +47,7 @@ app.post('/ch',(req,res)=>{
 })
 
 app.get('/chat',(req,res)=>{       
-     messages.find({}).sort({'date': -1}).exec().then(data=>{
+     messages.find({}).exec().then(data=>{
        res.json(data)
      })
 })
