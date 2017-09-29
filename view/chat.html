@@ -1,0 +1,34 @@
+<h1><em><b>Welcome {{user}}</b></em></h1>
+<br>
+<div class="container col-sm-10">
+  <h2><em>Messages : </em></h2>
+  <br>
+  <div  class="panel panel-primary">
+      <div class="panel-body" style="max-height: 350px;overflow-y: scroll;">
+<div ng-repeat="m in msg" class="list-group">
+ 
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{m.name}} </h5>
+            <small class="text-muted">{{m.date |timeAgo}}</small>
+          </div>
+          <p class="mb-1">{{m.contenu}} </p>
+        </a>
+   
+      </div>
+      <input type="hidden" name="ff" autofocus>
+    </div>
+    </div>
+<br>
+
+<form ng-submit="chat()" class="form-group" method="post" id="form">
+   
+        <label for="contenu">enter ur msg</label>
+        <input type="text" name="contenu" ng-model="contenu" class="form-control" required autofocus>
+        <br>
+        <div class="text-right">
+            <button type="submit" class="btn btn-outline-info"><em> send</em></button>
+        </div>
+    
+</form>
+</div>

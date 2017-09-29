@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/node_modules/bootstrap-v4-dev/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ez-alert.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="/node_modules/tether/dist/css/tether.min.css" rel="stylesheet">
+    <link src="/node_modules/angular/angular-csp.css">
+    
+</head>
+
+<body ng-app="chatRoom">
+
+    <nav class="navbar navbar-toggleable-sm navbar-inverse  fixed-top" style="background-color:black">
+        <a class="navbar-brand" style="color:black">Bj</a>
+    </nav>
+
+    <ez-alert></ez-alert>
+    <div class="container"><ng-view></ng-view></div>
+
+    <br><br>
+    <!--                  Libs                   -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js "></script>
+    <script src="js/libs/ez-alert.min.js"></script>
+    <script src="js/libs/ez-alert-tpl.js"></script>
+    <script src="/node_modules/angular-timeago/dist/angular-timeago-core.min.js"></script>
+    <script src="/node_modules/angular-timeago/dist/angular-timeago.min.js"></script>
+    <script src="/node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="/node_modules/bootstrap-v4-dev/dist/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/node_modules/angular-socket-io/socket.min.js"></script>
+    <!--                  main                   -->
+    <script src="js/main/main.js "></script>
+    <!--                  Ctrls                   -->
+    <script src="js/controller/chatCtrl.js "></script>
+
+</body>
+</html>
